@@ -1,0 +1,24 @@
+main: com.crashhascrashed.blankplugin.Main
+name: BlankPlugin
+version: '1.0'
+api-version: '1.18'
+description: A blank plugin
+author: CyberDrain
+commands:
+  doSomething:
+    description: Example command
+    permission: blankplugin.dosomething
+    permission-message: You do not have permission!
+    usage: /<command> [number]
+  doReload:
+    description: Reloads config file
+    permission: blankplugin.reload
+    permission-message: You do not have permission!
+    usage: /doReload
+permissions:
+  blankplugin.dosomething:
+    description: Allows doSomething command
+    default: op
+  blankplugin.doReload:
+    description: Allows reloading the config file
+    default: op
